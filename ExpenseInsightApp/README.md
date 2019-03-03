@@ -1,1 +1,0 @@
-ExpenseInsight application initial commit

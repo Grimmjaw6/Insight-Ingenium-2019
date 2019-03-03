@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Dashboard">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_dashboard" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -28,6 +28,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/design_default_color_primary"
         app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Expense Insight App"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp" />
 
 </android.support.design.widget.CoordinatorLayout>

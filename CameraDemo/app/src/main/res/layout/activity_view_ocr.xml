@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/viewocr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.viewocr.ViewOcrFragment"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="OCR Output"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/etOCR"
+        android:layout_width="370dp"
+        android:layout_height="279dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:text="Hotel Name: Courtyard Mariott\nInvoice No: 0123\nAddress: 123 Business Avenue\nCheck In Time: 01-03-2019\nCheck Out Time: 02-03-2019\nAmount: 150\nClaim date: 03-03-2019\nPayment mode: Cash"
+        android:tooltipText="Note: This is editable"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle1" />
+
+    <Button
+        android:id="@+id/btnSubmitOCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="SUBMIT CLAIM" />
+</LinearLayout>
