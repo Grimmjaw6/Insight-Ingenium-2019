@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1>Expense Id: {{expense.expense_id}}</h1>
+	<h1>Expense Type: {{expense.expense_type}}</h1>
+	<p>
+		Amount: {{expense.amount}}\n
+		Claimed on: {{expense.claim_date}}\n
+		Payment Mode: {{expense.payment_mode}}\n
+		Defected fraud: {{expense.auto_detect}}\n
+	</p>
+{% endblock content %}
